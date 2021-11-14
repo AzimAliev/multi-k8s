@@ -10,4 +10,4 @@ jobs:
     - name: Build dockerfile
       run: docker build -t azimaliev/react-test -f ./client/Dockerfile.dev ./client
     - name: Run tests
-      run: docker run -e CI=true azimaliev/react-test npm run test
+      run: docker run -e CI=true azimaliev/react-test yarn test
